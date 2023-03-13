@@ -3,7 +3,7 @@
 ## Installation Steps
 
 1. Clone the repository
-2. Run `yarn` or `npm install` to install the required dependencies (**it is recommended you switch to node version 12.6.0**).
+2. Run `yarn` or `npm install` to install the required dependencies.
 3. Run `npm i -g .` inside the cloned directory in order to make the `tracker` command available globally.
 
 ## Commands
