@@ -10,10 +10,7 @@ try {
   // Read the clients.json file and parse its contents into an array of clients
   const clientsData = fs.readFileSync(clientsFilePath);
   clients = JSON.parse(clientsData);
-} catch (error) {
-  // If the clients.json file doesn't exist or there's an error reading it, log the error
-  console.error(`Error reading clients.json file: ${error.message}`);
-}
+} catch (error) {}
 
 // Define the path to the jobs.json file
 const jobsFilePath = path.join(__dirname, 'jobs.json');
