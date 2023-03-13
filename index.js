@@ -52,5 +52,5 @@ else if (process.argv[2] === 'show-entries') {
     showEntries();
 }
 else {
-  console.log(`Invalid command: ${command}`);
+  console.log(`Invalid command${command ? ': ' + command : ''}`);
 }
