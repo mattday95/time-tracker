@@ -9,6 +9,7 @@ const stopJob = require('./commands/stopJob');
 const deleteJob = require('./commands/deleteJob');
 const deleteEntries = require('./commands/deleteEntries');
 const showEntries = require('./commands/showEntries');
+const addTimeToJob = require('./commands/addTimeToJob');
 const { clientsFilePath } = require('./common');
 
 const fs = require('fs');
@@ -50,6 +51,9 @@ else if (process.argv[2] === 'delete-job') {
 }
 else if (process.argv[2] === 'show-entries') {
     showEntries();
+}
+else if (process.argv[2] === 'add-time') {
+    addTimeToJob();
 }
 else {
   console.log(`Invalid command${command ? ': ' + command : ''}`);
